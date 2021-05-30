@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- [abc] internal CSS -->
+    <style>
+        button {
+            width: 64px;
+            height: 24px;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>abcDE</title>
+</head>
+
+<body>
+    <b>App</b> <span id="app-version"></span> /
+    <b>Node.js</b> <span id="node-version"></span> /
+    <b> Electron</b> <span id="electron-version"></span> /
+    <b> Chromium</b> <span id="chrome-version"></span>
+    <br><br>
+    <button id="SERIAL">serial</button>
+    <button id="demo">demo</button><br>
+    <br>
+    <table>
+        <tr>
+            <td>
+                message:
+            </td>
+            <td>
+                <div id="message"></div>
+            </td>
+        </tr>
+    </table>
+    <script src="./renderer.js"></script>
+</body>
+
+</html>
